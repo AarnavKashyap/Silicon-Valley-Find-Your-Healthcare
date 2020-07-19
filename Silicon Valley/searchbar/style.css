@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+  }
+
+body{
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+  }
+
+  .container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .brand{
+    text-align: center;
+  }
+
+  .brand span{
+    color: #fff;
+  }
+
+  .wrapper{
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  }
+
+  .wrapper > *{
+    padding: 1em;
+  }
+
+  .app-info{
+    background: #c9e6ff;
+  }
+
+  .app-info h3, .app-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .contact{
+    background: #f9feff;
+  }
+
+  .search-box{
+      position: relative;
+      
+      
+      
+  }
+  .search-box input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+      }
+
+    .search-box input[type = "text"]{
+      height: 50px;
+      padding: 0px 25px;
+      width: 400px;
+     background: #92bde7 ;
+     border: none;
+     outline: none;
+     border-radius: 25px 0 0 25px;
+     color: #fff;
+    }
+    .search-box input[type = "submit"]{
+      position: relative;
+      border-radius: 0 25px 25px 0;
+      height: 50px;
+      width: 150px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: #c9e6ff;
+      
+    }
+    .search-box input ::placeholder{
+      color: #fff;
+    }
+
+    @media(min-width : 700px){
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.wrapper > *{
+  padding: 2em;
+}
+.app-info h3, .app-info ul, .brand{
+  text-align: left;
+}
+    }
+
+    @media(max-width : 100px){
+      .search-box input[type = "text"]{
+        width: 200px;
+      }
+      .search-box input[type = "submit"]{
+        width : 75px
+      }
+    }
